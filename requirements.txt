@@ -1,0 +1,11 @@
+pandas
+openpyxl
+sqlalchemy
+pymysql
+streamlit
+plotly
+python-dotenv
+
+
+
+
