@@ -2,13 +2,15 @@
 
 ![Retail Sales Analytics Dashboard](assets/dashboard.png)
 
+[View the Live Dashboard](https://angel-retail-sales-analytics.streamlit.app)
+
 An end-to-end retail analytics project that extracts and cleans transactional sales data, loads it into MySQL, analyzes it with SQL, and displays business insights through an interactive Streamlit dashboard.
 
 ## Project Overview
 
 This project analyzes online retail transaction data using a complete data pipeline:
 
-Excel Dataset → Python ETL → Cleaned CSV → MySQL → SQL Analysis → Streamlit Dashboard
+**Excel Dataset → Python ETL → Cleaned CSV → MySQL → SQL Analysis → Streamlit Dashboard**
 
 The goal of the project is to demonstrate how raw business data can be transformed, stored, queried, and visualized in an interactive analytics application.
 
@@ -44,7 +46,9 @@ The goal of the project is to demonstrate how raw business data can be transform
 ## Project Structure
 
 ```text
-retail-sales-etl/
+retail-sales-analytics/
+├── assets/
+│   └── dashboard.png
 ├── dashboard/
 │   └── app.py
 ├── data/
@@ -57,4 +61,5 @@ retail-sales-etl/
 │   ├── transform.py
 │   └── load.py
 ├── .gitignore
-└── README.md
+├── README.md
+└── requirements.txt
