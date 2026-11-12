@@ -1,0 +1,22 @@
+RETAIL SALES DASHBOARD: INSTALL IN YOUR EXISTING GITHUB REPO
+
+This ZIP is a PATCH, not an empty new project. Keep your existing assets,
+src/extract.py, src/transform.py, src/load.py and sql/analysis.sql.
+
+1. Extract this zip locally, then copy the contents of the patch folder into
+   your repository (merge folders, replace matching files).
+2. Commit/push the changes to GitHub (branch main).
+3. In your GitHub repo, select Actions > Build Retail Snapshot > Run workflow.
+   Wait for the workflow to finish and verify data/retail_sales.sqlite.gz appears.
+   If write permissions fail, go to Settings > Actions > General > Workflow
+   permissions, allow read/write, and rerun. The account must have admin rights.
+4. In Streamlit Community Cloud, deploy/reboot from dashboard/app.py, branch main.
+5. Test the app at https://angel-retail-sales-analytics.streamlit.app/.
+
+The dashboard DOES NOT need Aiven/MySQL credentials after this update.
+The public dataset is historical and is rebuilt from the official UCI file.
+If the public dataset download is temporarily unavailable, use your local
+Online Retail.xlsx with the build_snapshot.py --source option.
+
+Not done yet: GitHub push, workflow execution, and the live production test.
+Those require access to GitHub/Streamlit settings and cannot be verified here.
